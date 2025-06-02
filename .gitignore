@@ -1,0 +1,5 @@
+!.python-version
+!poetry.lock
+!*.toml
+
+**/__pycache__/**
