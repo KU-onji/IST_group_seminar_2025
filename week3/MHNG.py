@@ -33,9 +33,9 @@ def main():
             agent_a.update_mu()
 
         if itr % 2 == 0:
-            print("iteration: ", itr)
-            print(agent_a.msgs)
-            print(agent_b.msgs)
+            print("iteration:", itr)
+            print("Agent-A:", agent_a.msgs)
+            print("Agent-B:", agent_b.msgs)
 
     print("===========")
     print("mu")
