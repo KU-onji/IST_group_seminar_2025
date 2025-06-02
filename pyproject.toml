@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ist-group-seminar-2025"
+version = "0.1.0"
+description = ""
+authors = ["KU-onji <mgr_127@yahoo.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.2.6"
+matplotlib = "^3.10.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
