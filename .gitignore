@@ -3,3 +3,4 @@
 !*.toml
 
 **/__pycache__/**
+/data/*
