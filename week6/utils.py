@@ -83,13 +83,13 @@ def call_gpt(prompt: str | List[str], model="gpt-4o-mini", temperature=0.5, form
         return res.choices[0].message.content
 
 
-class Hypothesis(BaseModel):
+class Thought(BaseModel):
     hypothesis: str
     score: float
-
-
-class Thought(BaseModel):
-    current_observation: List[str]
-    possible_hypotheses: List[Hypothesis]
     next_question: str | None
+
+
+class TreeOfThought(BaseModel):
+    current_observation: List[str]
+    possible_thoughts: List[Thought]
     is_terminal: bool
